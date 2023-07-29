@@ -46,8 +46,8 @@ class Service:
     def __init__(self):
         self.llm = ChatOpenAI(
             temperature=0.7,
-            model="gpt-35-turbo",
-            model_kwargs={"engine": "gpt-35-turbo"},
+            model=os.environ["OPENAI_DEPLOYMENT_ID"],
+            model_kwargs={"engine": os.environ["OPENAI_DEPLOYMENT_ID"]},
             tiktoken_model_name="gpt-3.5-turbo",
         )
         self.qdrant_client = qdrant_client.QdrantClient(
