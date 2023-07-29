@@ -49,6 +49,7 @@ To Dockerized AI Chatbot, you need to prepare `.env` file with proper values in 
 |  OPENAI_API_BASE             |  OPEN AI API host     |
 |  OPENAI_API_KEY              |  OPEN AI API Key           |
 |  OPENAI_API_VERSION          |  OPEN AI API Version        |
+|  OPENAI_DEPLOYMENT_ID        |  Name of model          |
 |  QDRANT_URL                  |  Qdrant Cluster URL            |
 |  QDRANT_API_KEY              |  Qdrant API Key            |
 |  QDRANT_COLLECTION_NAME      |  Name of collection in vector  |
